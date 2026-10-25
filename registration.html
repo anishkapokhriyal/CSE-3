@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+    </head>
+    <body>
+        <h1>Student Registration</h1>
+        <p>This is a simple registration page.</p>
+        <form action="/submit_registration" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required><br><br>
+            <p>Gender:</p>
+            <input type="radio" id="gender_male" name="gender" value="male" required>
+            <label for="gender_male">Male</label><br>
+            <input type="radio" id="gender_female" name="gender" value="female" required>
+            <label for="gender_female">Female</label><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" placeholder="Enter your date of birth" required><br><br>
+            <label for="course">Course:</label><br>
+            <input type="text" id="course" name="course" placeholder="Enter your course" required><br><br>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="bsc">B.Sc</option>
+                <option value="bcom">B.Com</option>
+                <option value="ba">B.A</option>
+                <option value="btech">B.Tech</option>
+            </select><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required><br><br>
+            <label for="terms">Terms and Conditions:</label><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label><br><br>
+            <button type="submit" value="Register">Register</button>
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+    </body>
+</html>
